@@ -109,7 +109,7 @@ export default function HomePage() {
 	const age = differenceInYears(today, birthday);
 	const isBirthday = isSameDay(today, birthday) && isSameMonth(today, birthday);
 
-	const description = `I am a student, web enthusiast & computer aficionado based in Barcelona, Spain.`;
+	const description = `I am a student, web enthusiast & computer aficionado based in Spain.`;
 
 	return (
 		<Layout.Default seo={{ title: 'alex ─ developer' }}>
