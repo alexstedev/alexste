@@ -83,7 +83,7 @@ const MenuItemSpacer = styled.span(tw`
 
 const LeftIcon = styled(Icon)(tw`
 	w-5 h-5 \
-	mr-3
+	mr-3 \
 `);
 
 const RightIcon = styled(Icon)(tw`
