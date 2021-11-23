@@ -85,6 +85,20 @@ const ACTIONS: Array<NavigationItem> = [
 		icon: <ActionIcon icon="feather:github" />,
 		text: 'GitHub',
 	},
+	{
+		type: NavigationItemType.LINK,
+		external: true,
+		href: 'https://github.com/alexstedev',
+		icon: <ActionIcon icon="feather:file" />,
+		text: 'Resume',
+	},
+	{
+		type: NavigationItemType.LINK,
+		external: true,
+		href: 'mailto:me@alexste.com',
+		icon: <ActionIcon icon="feather:mail" />,
+		text: 'Contact',
+	},
 ];
 
 export default function HomePage() {
