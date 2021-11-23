@@ -1,6 +1,6 @@
 <div align="center">
 
-<a target="_blank" href="https://nuro.dev">
+<a target="_blank" href="https://alexste.com">
     <img alt='Website' src="./public/blog/hello_world/screenshot.png" />
 </a>
 
