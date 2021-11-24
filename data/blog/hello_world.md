@@ -2,7 +2,7 @@
 banner_alt: A photo of a forest overlooking the bright white sky in the background
 banner: https://images.unsplash.com/photo-1494825514961-674db1ac2700?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8
 title_prefix: Introducing
-title: 👋🏻 Hello World
+title: 🚀 Building process of this site
 description: This site has been long overdue a re-design & fresh lick of paint, so here's how I did it.
 date: '2021-10-22'
 ---
@@ -27,7 +27,7 @@ So, having been a few years since my last portfolio website launch I decided to 
 
 ---
 
-The [project](https://github.com/nurodev/nuro.dev) built using the following tools & frameworks:
+The [project](https://github.com/alexstedev/alexste.dev) built using the following tools & frameworks:
 
 -   :atom_symbol: [React](https://reactjs.org/) / [Preact](https://preactjs.com/) (For Production)
 -   :muscle: [Next.js](https://nextjs.org/)
@@ -84,7 +84,7 @@ webpack: (config, { dev, isServer }) => {
 
 As you can tell by the fact you're currently reading this, I now have a blog! :tada:
 
-This means that I finally have a place to create lengthy articles that can go more in-depth on topics I care deeply about. Eveyrthing from technical write-ups on new technology I am experimenting with, to other personal posts on hobbies enjoy, such as mechanical keyboards.
+This means that I finally have a place to create lengthy articles that can go more in-depth on topics I care deeply about. Everything from technical write-ups on new technology I am experimenting with, to other personal posts on hobbies enjoy, such as mechanical keyboards.
 
 <XButton href="/blog" icon="feather:external-link" label="Vist my Blog" />
 
@@ -133,32 +133,6 @@ With a bit of technical planning & building I was able to put together a simple 
 
 <XButton href="/timeline" icon="feather:external-link" label="Go to Timeline" />
 
-### :link: Referrals
-
----
-
-A lot of companies now days offer a referral system. Everyone from big companies like Amazon & Tesla (Sadly they just ended it), to smaller startups like [FreeTrade](https://freetrade.io/) & [Klima](https://klima.com/).
-
-With more & more companies offering referral rewards, what better place to share mine than on my personal website ¯\\\_(ツ)\_/¯
-
-This page is built almost identically to my [timeline](/timeline) page whereby a JSON structure is used to store the data that is then compiled at build time into a static page.
-
-![Screenshot of the referrals page](/blog/hello_world/referrals.png 'Screenshot of the referrals page')
-
-<XButton href="/referrals" icon="feather:external-link" label="Go to Referrals" />
-
-### :red_circle: Status
-
----
-
-This next feature I am super happy with how it turned out & a HUGE credit has to go to [@phineyes](https://twitter.com/phineyes) for his work on building & hosting [Lanyard](https://github.com/Phineas/lanyard), a service to expose your Discord presence via a RESTful API or WebSocket.
-
-Using Lanyard I was able to build a live status widget & indicator component(s) that mean, as long as I am online on Discord, anyone is able to view what I am listening to on Spotify, what game I'm playing or even whatever I am coding thanks to a Visual Studio Code extension that adds rich presence to Discord.
-
-![Status Widget in action](/blog/hello_world/lanyard.gif 'Status Widget in action')
-
-<XButton href="/status" icon="feather:external-link" label="Go to Status" />
-
 ### :crescent_moon: Theme
 
 ---
@@ -181,7 +155,7 @@ Currently the click sound is the only sound effect... For now. In the future I w
 
 The final fea... Well, kind of a feature but more of a much needed improvement has been accessibility.
 
-My previous website iteration met a lot of the minimum requirements for basic accessibility, however it could have been a lot better. Since the launch of that site I have learn't a LOT about the importance of accibility when designing & building websites / applications. As such I wanted to do my very best when building this one to improve it & make it as accessible as possible.
+My previous website iteration met a lot of the minimum requirements for basic accessibility, however it could have been a lot better. Since the launch of that site I have learn't a LOT about the importance of acceibility when designing & building websites / applications. As such I wanted to do my very best when building this one to improve it & make it as accessible as possible.
 
 Here are some of the notable accessibility features/improvements:
 
@@ -244,4 +218,4 @@ I will always try to improve accessibility where possible. If you feel I am miss
 
 And with all of that, we have the final result of what you are looking at right now!
 
-![A screenshot of nuro.dev](/blog/hello_world/screenshot.png 'A screenshot of nuro.dev')
+![A screenshot of alexste.com](/blog/hello_world/hello_world.png 'A screenshot of alexste.com')
