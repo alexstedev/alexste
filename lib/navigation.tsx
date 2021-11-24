@@ -28,19 +28,13 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 			text: 'Projects',
 			href: '/projects',
 		},
-		{
-			type: NavigationItemType.LINK,
-			icon: 'feather:clock',
-			text: 'Timeline',
-			href: '/timeline',
-		},
 	],
 	[
 		{
 			type: NavigationItemType.LINK,
-			icon: 'feather:codepen',
-			text: 'Codepen',
-			href: 'https://codepen.io',
+			icon: 'feather:mail',
+			text: 'Email me',
+			href: 'mailto:alexstedev@gmail.com',
 			external: true,
 		},
 		{

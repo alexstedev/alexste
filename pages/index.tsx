@@ -88,14 +88,7 @@ const ACTIONS: Array<NavigationItem> = [
 	{
 		type: NavigationItemType.LINK,
 		external: true,
-		href: 'https://github.com/alexstedev',
-		icon: <ActionIcon icon="feather:file" />,
-		text: 'Resume',
-	},
-	{
-		type: NavigationItemType.LINK,
-		external: true,
-		href: 'mailto:me@alexste.com',
+		href: 'mailto:alexstedev@gmail.com',
 		icon: <ActionIcon icon="feather:mail" />,
 		text: 'Contact',
 	},
