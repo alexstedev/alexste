@@ -1,6 +1,6 @@
 ---
 banner_alt: A photo of a forest overlooking the bright white sky in the background
-banner: https://cdn.pixabay.com/photo/2021/09/15/06/29/pot-marigold-6625895_960_720.jpg
+banner: https://images.unsplash.com/photo-1494825514961-674db1ac2700?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8
 title_prefix: Introducing
 title: 🚀 Building process of this site
 description: This site has been long overdue a re-design & fresh lick of paint, so here's how I did it.
