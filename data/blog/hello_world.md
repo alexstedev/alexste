@@ -111,28 +111,6 @@ With this I can update the contents of my projects page by using GitHub as a for
 
 <XButton href="/projects" icon="feather:external-link" label="Go to Projects" />
 
-### :clock1: Timeline
-
----
-
-When planning out my re-design I explored hundreds of portfolio websites. Some from big well known developers, to smaller less known devs. To very successfull designers, to students who have some really amazing looking sites so early on.
-
-To quickly name a few that helped me a lot:
-
--   [jmswrnr.com](https://jmswrnr.com)
--   [leerob.io](https://leerob.io)
--   [maximeheckel.com](https://maximeheckel.com)
--   [phineas.io](https://phineas.io)
--   [wojtek.im](https://wojtek.im)
--   [www.joshwcomeau.com](https://www.joshwcomeau.com)
--   [www.stuart.re](https://www.stuart.re)
--   [www.twanmulder.com](https://www.twanmulder.com)
-
-That last one in particular I wanted to thank for this feature as I found it as a really nice way to track & record big events without having to do a blog post every time.
-With a bit of technical planning & building I was able to put together a simple JSON structure that would allow me to simply add a new object with simple data about the event to add it to my timeline page. Most of the heavy lifting of which is done by [Next.js's static site generation (SSG)](https://nextjs.org/blog/next-9-3#next-gen-static-site-generation-ssg-support).
-
-<XButton href="/timeline" icon="feather:external-link" label="Go to Timeline" />
-
 ### :crescent_moon: Theme
 
 ---
