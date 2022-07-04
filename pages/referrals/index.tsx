@@ -85,7 +85,7 @@ export default function ReferralsPage({ referrals }: ReferralsProps) {
 	}
 
 	return (
-		<Layout.Default seo={{ title: 'nuro ─ referrals' }}>
+		<Layout.Default seo={{ title: 'alex ─ referrals' }}>
 			<Container>
 				<Content>
 					<List.Container
@@ -100,13 +100,13 @@ export default function ReferralsPage({ referrals }: ReferralsProps) {
 									},
 									...(referral.code
 										? [
-												{
-													type: ListActionType.BUTTON,
-													icon: 'feather:hash',
-													label: 'Copy Referral Code',
-													onClick: () => onCopy(referral.code),
-												} as ListAction,
-										  ]
+											{
+												type: ListActionType.BUTTON,
+												icon: 'feather:hash',
+												label: 'Copy Referral Code',
+												onClick: () => onCopy(referral.code),
+											} as ListAction,
+										]
 										: []),
 									{
 										type: ListActionType.LINK,
