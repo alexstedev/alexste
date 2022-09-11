@@ -71,7 +71,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	useEvent('mouseup', () => play());
 
 	return (
-		<ThemeProvider attribute="class" defaultTheme={Theme.SYSTEM} themes={Object.values(Theme)}>
+		<ThemeProvider attribute="class" defaultTheme={Theme.DARK} themes={Object.values(Theme)}>
 			<EmotionStyles styles={GlobalStyles} />
 			<TailwindStyles />
 			<Toaster />
