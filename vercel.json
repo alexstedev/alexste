@@ -3,9 +3,17 @@
 	"alias": "alexste.com",
 	"cleanUrls": true,
 	"public": true,
-	"regions": ["lhr1"],
+	"regions": [
+		"lhr1"
+	],
 	"redirects": [
-		{ "source": "/github", "destination": "https://github.com/alexstedev" },
-		{ "source": "/portfolio", "destination": "/projects" }
+		{
+			"source": "/github",
+			"destination": "https://github.com/serteal"
+		},
+		{
+			"source": "/portfolio",
+			"destination": "/projects"
+		}
 	]
 }

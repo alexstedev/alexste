@@ -2,8 +2,8 @@
 	"private": true,
 	"name": "alexste.com",
 	"version": "1.0.0",
-	"description": "Personal Website for alexstedev",
-	"repository": "https://github.com/alexstedev/alexste.git",
+	"description": "Personal Website for serteal",
+	"repository": "https://github.com/serteal/alexste.dev.git",
 	"author": "alexstedev <alexstedev@gmail.com>",
 	"license": "MIT",
 	"prettier": {

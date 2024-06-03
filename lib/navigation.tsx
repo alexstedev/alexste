@@ -41,7 +41,7 @@ const staticMenuItems: Array<Array<NavigationItem>> = [
 			type: NavigationItemType.LINK,
 			icon: 'feather:github',
 			text: 'GitHub',
-			href: 'https://github.com/alexstedev',
+			href: 'https://github.com/serteal',
 			external: true,
 		},
 	],
@@ -64,20 +64,20 @@ export function useNavigation() {
 		...staticMenuItems,
 		...(!loading && status && status.discord_status !== DiscordStatus.OFFLINE
 			? [
-					[
-						{
-							type: NavigationItemType.LINK,
-							icon: (
-								<Status.Indicator
-									color={color}
-									pulse={status.discord_status !== DiscordStatus.OFFLINE}
-								/>
-							),
-							text: 'Status',
-							href: '/status',
-						} as NavigationItem,
-					],
-			  ]
+				[
+					{
+						type: NavigationItemType.LINK,
+						icon: (
+							<Status.Indicator
+								color={color}
+								pulse={status.discord_status !== DiscordStatus.OFFLINE}
+							/>
+						),
+						text: 'Status',
+						href: '/status',
+					} as NavigationItem,
+				],
+			]
 			: []),
 	];
 

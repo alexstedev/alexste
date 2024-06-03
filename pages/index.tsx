@@ -81,7 +81,7 @@ const ACTIONS: Array<NavigationItem> = [
 	{
 		type: NavigationItemType.LINK,
 		external: true,
-		href: 'https://github.com/alexstedev',
+		href: 'https://github.com/serteal',
 		icon: <ActionIcon icon="feather:github" />,
 		text: 'GitHub',
 	},
@@ -106,7 +106,7 @@ export default function HomePage() {
 
 	return (
 		<Layout.Default seo={{ title: 'alex ─ developer' }}>
-			{isBirthday && <Event event={EventType.BIRTHDAY}/>}
+			{isBirthday && <Event event={EventType.BIRTHDAY} />}
 			<Container>
 				<Content>
 					{animations ? (

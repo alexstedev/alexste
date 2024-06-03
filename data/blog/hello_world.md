@@ -1,6 +1,6 @@
 ---
 banner_alt: A photo of a forest overlooking the bright white sky in the background
-banner: https://raw.githubusercontent.com/alexstedev/alexste.dev/main/public/banner.png
+banner: https://raw.githubusercontent.com/serteal/alexste.dev/main/public/banner.png
 title_prefix: Introducing
 title: 🚀 Building process of this site
 description: This site has been long overdue a re-design & fresh lick of paint, so here's how I did it.
@@ -27,7 +27,7 @@ So, having been a few years since my last portfolio website launch I decided to 
 
 ---
 
-The [project](https://github.com/alexstedev/alexste.dev) built using the following tools & frameworks:
+The [project](https://github.com/serteal/alexste.dev) built using the following tools & frameworks:
 
 -   :atom_symbol: [React](https://reactjs.org/) / [Preact](https://preactjs.com/) (For Production)
 -   :muscle: [Next.js](https://nextjs.org/)
