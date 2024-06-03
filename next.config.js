@@ -1,5 +1,22 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
+const WindiCSS = require('windicss-webpack-plugin');
+const { withAxiom } = require('next-axiom');
+
+const ContentSecurityPolicy = `
+  child-src *.google.com streamable.com;
+  connect-src *;
+  default-src 'self';
+  font-src 'self';
+  img-src * blob: data:;
+  media-src 'none';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.splitbee.io;
+  style-src 'self' 'unsafe-inline' *.googleapis.com;
+  worker-src 'self' 'unsafe-inline' blob:;
+`;
+
+/**
+ * @type {import('next').NextConfig}
+ */
+const config = {
 	images: {
 		domains: [
 			// Discord assets
@@ -10,6 +27,9 @@ module.exports = {
 
 			// Spotify Album Art
 			'i.scdn.co',
+
+			// Streamable thumbnails
+			'cdn-cf-east.streamable.com',
 
 			// Unsplash
 			'source.unsplash.com',
@@ -48,28 +68,27 @@ module.exports = {
 		];
 	},
 	reactStrictMode: true,
+	swcMinify: true,
 	webpack: (config, { dev, isServer }) => {
+		// TODO: Temp disabled as since upgrading `next` to v12.2.3 production builds fail & this seems to be the cause
 		// Replace React with Preact only in client production build
-		if (!dev && !isServer) {
-			Object.assign(config.resolve.alias, {
-				react: 'preact/compat',
-				'react-dom/test-utils': 'preact/test-utils',
-				'react-dom': 'preact/compat',
-			});
-		}
+		// if (!dev && !isServer) {
+		// 	Object.assign(config.resolve.alias, {
+		// 		react: 'preact/compat',
+		// 		'react-dom/test-utils': 'preact/test-utils',
+		// 		'react-dom': 'preact/compat',
+		// 	});
+		// }
+
+		config.plugins.push(new WindiCSS());
+
+		config.module.rules.push({
+			test: /\.(glsl|vs|fs|frag|vert)$/,
+			use: ['ts-shader-loader'],
+		});
 
 		return config;
 	},
 };
 
-const ContentSecurityPolicy = `
-  child-src *.google.com;
-  connect-src *;
-  default-src 'self';
-  font-src 'self';
-  img-src * blob: data:;
-  media-src 'none';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' cdn.splitbee.io;
-  style-src 'self' 'unsafe-inline' *.googleapis.com;
-  worker-src 'self' 'unsafe-inline' blob:;
-`;
+module.exports = withAxiom(config);
